@@ -16,8 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+# 
+# To enable format suffix patterns
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^', include('snippets.urls')),
 ]
+
+
